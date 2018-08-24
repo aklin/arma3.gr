@@ -21,6 +21,9 @@
     "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],
+    "scripts": {
+	"compile": "sass node_modules/hmc-colours/custom.scss vendor/bootstrap/css/bootstrap.css --style compressed"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-half-slider.git"
