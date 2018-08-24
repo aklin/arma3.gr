@@ -21,6 +21,7 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans');
         .bg-darkblue{
             background-color: #1a3c56;
         }
@@ -29,6 +30,26 @@
             background: url('https://www.seeklogo.net/wp-content/uploads/2016/09/paypal-logo-preview.png') no-repeat #ffa500;
         }
 
+        .logo-center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 12;
+            font-family: 'Electrolize', sans-serif;
+            text-align: center;
+        }
+
+        .logo{
+            font-size: 8em;
+            -webkit-text-stroke: 1px gray;
+            color: darkgray;
+        }
+
+        .logo-sub{
+            font-weight:bold;
+            font-family: 'Open Sans', sans-serif;
+        }
     </style>
       </head>
 
@@ -82,45 +103,12 @@
       </div>
 
 
-
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-      <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
-      <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-      <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-
-
-
-    <!-- Navigation
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
--->
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="logo-center">
+              <span class="logo">arma3.gr</span>
+              <p class="logo-sub">Ελληνική Κοινότητα Στρατιωτικής Προσομοίωσης</p>
+          </div>
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -170,64 +158,16 @@
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dapibus ac facilisis in</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Morbi leo risus</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Porta ac consectetur ac</a>
-		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark disabled">Vestibulum at eros</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dapibus ac facilisis in</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Morbi leo risus</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Porta ac consectetur ac</a>
-		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark disabled">Vestibulum at eros</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dapibus ac facilisis in</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Morbi leo risus</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Porta ac consectetur ac</a>
-		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark disabled">Vestibulum at eros</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Morbi leo risus</a>
 		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Porta ac consectetur ac</a>
-		  <a href="#" class="list-group-item list-group-item-action list-group-item-dark disabled">Vestibulum at eros</a>
 		</nav>
-<!--
-    <nav class="col-md-3 sidebar sidebar-inverse bg-dark">
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Reports</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Analytics</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Export</a>
-                </li>
-              </ul>
 
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
-                </li>
-              </ul>
-
-              <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nav item again</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">One more nav</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Another nav item</a>
-                </li>
-              </ul>
-            </nav>
--->
     <div class="col py-5">
       <div class="container">
         <h1>Half Slider by Start Bootstrap</h1>
@@ -250,6 +190,13 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
 
   </body>
 
