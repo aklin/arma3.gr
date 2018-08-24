@@ -22,7 +22,7 @@
         "David Miller (http://davidmiller.io/)"
     ],
     "scripts": {
-	"compile": "sass node_modules/hmc-colours/custom.scss vendor/bootstrap/css/bootstrap.css --style compressed"
+	"compile": "sass node_modules/hmc-colours/custom.scss vendor/bootstrap/css/bootstrap.css --style compressed && sass css/custom.scss css/custom.css --style compressed"
     },
     "repository": {
         "type": "git",

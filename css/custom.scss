@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans|Advent+Pro|Play|Jura');
+@import "../node_modules/hmc-colours/custom.scss";
+
+$grfont: 'Jura', sans-serif;
+
+.navbar-brand{
+    font-family: 'Electrolize', sans-serif;
+}
+
+.al{
+    text-align: left;
+}
+
+.ar{
+    text-align: right;
+}
+
+.list-group-item{
+    text-align: right;
+    font-family: $grfont;
+    color: $white;
+}
+
+.list-group-item:hover{
+    color: $yellow;
+}
+
+.logo-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+
+    .main {
+        font-size: 8em;
+        -webkit-text-stroke: 1px gray;
+        color: $orange;
+    }
+
+    .sub {
+        background-color: theme-color('primary');
+        color: $white;
+        font-weight: bold;
+        font-family: $grfont
+    }
+}
