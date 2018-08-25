@@ -2,9 +2,18 @@
 @import "../node_modules/hmc-colours/custom.scss";
 
 $grfont: 'Jura', sans-serif;
+$enfont: 'Electrolize', sans-serif;
 
 .navbar-brand{
-    font-family: 'Electrolize', sans-serif;
+    font-family: $enfont;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $grfont;
+}
+
+.panel-title{
+    text-align: center;
 }
 
 .al{
@@ -31,19 +40,18 @@ $grfont: 'Jura', sans-serif;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 12;
-    font-family: 'Electrolize', sans-serif;
+    color: $white;
+    font-weight: bolder;
     text-align: center;
 
     .main {
+        font-family: $enfont;
         font-size: 8em;
         -webkit-text-stroke: 1px gray;
-        color: $orange;
     }
 
     .sub {
         background-color: theme-color('primary');
-        color: $white;
-        font-weight: bold;
-        font-family: $grfont
+        font-family: $grfont;
     }
 }
