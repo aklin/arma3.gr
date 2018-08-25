@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans|Advent+Pro|Play|Jura');
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans|Jura');
 @import "../node_modules/hmc-colours/custom.scss";
 
 $grfont: 'Jura', sans-serif;
@@ -40,14 +40,13 @@ h1,h2,h3,h4,h5{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 12;
-    color: $white;
     font-weight: bolder;
     text-align: center;
-
+	color: #fff;
     .main {
         font-family: $enfont;
         font-size: 8em;
-        -webkit-text-stroke: 1px gray;
+        -webkit-text-stroke: 1px darken(white, 40);
     }
 
     .sub {

@@ -22,7 +22,8 @@
         "David Miller (http://davidmiller.io/)"
     ],
     "scripts": {
-	"compile": "sass node_modules/hmc-colours/custom.scss vendor/bootstrap/css/bootstrap.css --style compressed && sass css/custom.scss css/custom.css --style compressed"
+	"compile": "sass node_modules/hmc-colours/custom.scss vendor/bootstrap/css/bootstrap.css --style compressed && sass css/custom.scss css/custom.css --style compressed",
+	"watch": "sass --watch css/custom.scss:css/custom.css"
     },
     "repository": {
         "type": "git",
@@ -30,6 +31,7 @@
     },
     "dependencies": {
         "bootstrap": "4.1.1",
+		"hmc-colours": "git+https://github.com/HellenicMilsim/hmc-colours.git",
         "jquery": "3.3.1"
     },
     "devDependencies": {
