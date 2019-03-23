@@ -3,18 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A layout example that shows off a responsive product landing page.">
+	<meta name="description" content="Arma 3 GR | Ελληνική Κοινότητα Arma 3">
 	<title>{{ site.title }}</title>
 
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 	<style type="text/css">
 		.media {
-			filter: saturate(50%);
+			filter: saturate(45%);
 		}
 
 		.video-splash{
-			transform: scale(1.8) translateY(-100px);
+			transform: scale(1.8); // translateY(-100px);
 		}
+
+		.gallery {
+			line-height: 0;
+			overflow: hidden;
+		}
+
+		.gallery .gallery-img{
+			overflow: hidden;
+			/*width: 50%;*/
+		}
+
+		.gallery-img img {
+			width: 100%;
+			transform: scale(1.28);
+		}
+
 	</style>
 
 	<!--[if lte IE 8]>
@@ -37,7 +53,6 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Hellenic Milsim</a>
-
         <ul class="pure-menu-list">
         	{% for nav in site.data.nav %}
         		<li class="pure-menu-item"><a href="{{ nav.url }}" class="pure-menu-link">{{ nav.name | upcase }}</a></li>

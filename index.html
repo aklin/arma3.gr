@@ -46,7 +46,7 @@ layout: index
         </div>
     </div>
 
-{% assign cols = 2 %}
+{% assign cols = 3 %}
 {% assign count = 0 %}
 {% assign opened = false %}
 {% for image in site.static_files %}
@@ -55,20 +55,20 @@ layout: index
 	{% continue %}
 {% endunless %}
 
+{% assign group = count | modulo: cols %}
+{% assign count = count | plus: 1 %}
+
 {% if opened == true and group == 0 %}
 	{% assign opened = false %}
 	</div>
 {% endif %}
 
-{% assign group = count | modulo: cols %}
-{% assign count = count | plus: 1 %}
-
 {% if opened == false %}
 	{% assign opened = true %}
-	<div class="pure-g">
+	<div class="pure-g gallery">
 {% endif %}
 
-<div class="pure-u-1-{{ cols }}"><img src="{{ image.path }}" class="media" alt=""></div>
+<div class="pure-u-1-{{ cols }} gallery-img"><img src="{{ image.path }}" class="media" alt=""></div>
 
 
 {% endfor %}
