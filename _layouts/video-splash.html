@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'a4fPRQxh_Ag', // YouTube Video ID
+    startSeconds: 8,
+    // endSeconds: 232,
+    width: '100%',               // Player width (in px)
+    height: '100%',              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 0,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 1         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+
+ // Written by @labnol
+</script>
+
+
+<div class="splash-container">
+
+<!-- <div id="muteYouTubeVideoPlayer" class="media video-splash"></div> -->
+<!--
+<iframe display=none width="100%" height="100%" src="https://www.youtube.com/embed/l72m8heICBk?autoplay=1&enablejsapi=1&fs=0&modestbranding=1&playsinline=1&showinfo=0&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ -->
+	<div class="splash">
+		<h1 class="splash-head">{{ site.headline }}</h1>
+		<p class="splash-subhead">
+			{{ site.subtitle | uppercase }}
+		</p>
+		<p>
+			<a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+		</p>
+	</div>
+</div>
+
+{{ content }}
